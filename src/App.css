@@ -74,159 +74,107 @@
     }
 
     .About-container p {
-        font-size: 1rem; /* Even smaller font size for very small screens */
+        font-size: 1rem; 
     }
 
     .abthr {
         padding-top: 15%;
     }
 }
+/* Collab */
 
-
-/* Collab */ 
-
-.Collab-container{
-    
-    height: 100vh;
+.collab-container {
     background-color: #F5EFD6;
-    align-items: center;
-    justify-content: center;
-}
-
-.Collab-heading{
-    font-size: 4rem;
-    padding-top: 12.5vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: bolder;
-    text-align: center;
-    color: #e5601c;
-    
-}
-.Collab-logos {
-    display: grid;
-    grid-template-columns: repeat(3, 3fr); /* Create 3 equal columns */
-    margin-top: -17.5vh;
-    justify-items: center; /* Center the logos horizontally */
-    align-items: center; /* Center the logos vertically */
-    width: 100%;
-    height: 100%;
-    padding-bottom: 5vh;
-    scale: .8;
-    
-}
-
-.Collab-logos a {
-    /* Make each link take up equal space */
+    height: 100vh;
     display: flex;
-    justify-content: center; /* Center the logos within each link */
-    align-items: center; 
-    scale: .5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
-.eeti-logo, .foces-logo, .dummy-logo, .visatiedc-logo {
-    max-height: 100%; /* Ensure logos do not exceed the container height */
-    max-width: 100%; /* Ensure logos do not exceed the container width */
+.collab-heading {
+    font-size: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #e5601c;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.iedccec-logo{
-    max-height: 80%; /* Ensure logos do not exceed the container height */
-    max-width: 80%;
-
+.collab-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
 }
 
-.sreeiedc-logo{
-    max-height: 60%; /* Ensure logos do not exceed the container height */
-    max-width: 60%;
-    margin-top: -15vh;
-
+.collab-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+    width: 20%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.iedccek-logo{
-    max-height: 100%; /* Ensure logos do not exceed the container height */
+.collab-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.collab-logo {
     max-width: 100%;
-    scale: 1.4;
-
-}
-.catalyst-logo{
-    max-height: 60%; /* Ensure logos do not exceed the container height */
-    max-width: 60%;
-    scale: .65;
-
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
-.catalyt{
-    width: 70%;
-    height: 70%;
-}
-
-.eeti-logo:hover, .foces-logo:hover, .dummy-logo:hover, .visat-logo:hover, .iedccec-logo:hover, .sreeiedc-logo:hover, .iedccek-logo:hover, .catalyst-logo:hover {
-    transform: scale(1.1); /* Scale the logo on hover */
-    transition: transform 0.3s; /* Smooth transition */
-    
-     filter: drop-shadow(0 0 0.75rem #d8d3d3d1);
-
-
+.collab-logo[alt="Sree Rama IEDC"], 
+.collab-logo[alt="Catalyst"] {
+    transform: scale(0.65); 
 }
 
 
+.collab-logo:hover {
+    transform: scale(1.1);
+}
+
+.collab-logo[alt="Sree Rama IEDC"]:hover, 
+.collab-logo[alt="Catalyst"]:hover {
+    transform: scale(0.7); 
+}
 
 /* Media Queries */
 
-@media (max-width: 480px) {
-
-    .Collab-heading{
+@media (max-width: 768px) {
+    .collab-heading {
         font-size: 2.5rem;
-        padding-top: 12vh;
-        
-
     }
 
-    .Collab-logos {
-        display: grid;
-        grid-template-columns: repeat(2, 3fr);
-        scale: .8;
-        padding-bottom: 0%;
-        margin-top: -12.5vh;
+    .collab-card {
+        width: 150px;
+        height: 150px;
     }
-    
-    .sreeiedc-logo{
-        margin-left: -200%;
-        max-width: 90%;
-        max-height: 90%;
-    
-    }
-    .eeti-logo, .iedccec-logo, .foces-logo, .dummy-logo, .visat-logo, .catalyst-logo {
-        max-height: 130%; /* Further increase the size of the logos */
-        max-width: 130%;
-        scale: 1.2;
-    }
-
-    .iedccek-logo{
-        max-height: 130%; /* Further increase the size of the logos */
-        max-width: 130%;
-        scale: 1.7;
-    }
-
-    .iedccec-logo{
-        max-height: 100%; /* Further increase the size of the logos */
-        max-width: 100%;
-        scale: 1.07;
-    }
-
-    .catalyst-logo{
-        max-height: 100%; /* Further increase the size of the logos */
-        max-width: 100%;
-        scale: .9;
-    }
-
 }
 
-@media (max-width: 330px) {
-    .Collab-heading{
-        font-size: 2rem;
-        
-
+@media (max-width: 480px) {
+    .collab-heading {
+        font-size: 1.7rem;
+        padding-bottom: -20%;
     }
 
+    .collab-card {
+        width: 120px;
+        height: 120px;
+    }
 
+    .collab-container {
+        padding-top: 17%;
+    }
 }

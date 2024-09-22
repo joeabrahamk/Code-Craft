@@ -8,58 +8,32 @@ import sreeiedc from "../assets/sreeramaiedc.webp";
 import catalyst from "../assets/Catalyst.webp";
 
 function Collab() {
+    const collaborators = [
+        { src: eetilogo, alt: "EETI", href: "https://www.eetifoundation.org/" },
+        { src: iedccec, alt: "IEDC Bootcamp CEC", href: "https://www.iedcbootcampcec.in/" },
+        { src: foces, alt: "FOCES", href: "https://foces.ceconline.edu/" },
+        { src: visatiedc, alt: "VISAT IEDC", href: "https://www.visat.org" },
+        { src: iedccek, alt: "IEDC CEK", href: "https://iedc-cek.vercel.app/" },
+        { src: catalyst, alt: "Catalyst", href: "https://www.visat.org" },
+        { src: sreeiedc, alt: "Sree Rama IEDC", href: "" },
+    ];
+
     return (
-
-        <>
-            <div className="Collab-container">
-                <div className="Collab-heading">
-                     <h1>In Collaboration With</h1>
-                </div>
-
-                <div className="Collab-logos">
-                    
-                <a href="https://www.eetifoundation.org/" target="_blank" rel="noopener noreferrer">
-                        <img src={eetilogo} className="eeti-logo" alt="EETI" />
-                    </a>
-                    <a href="https://www.iedcbootcampcec.in/" target="_blank" rel="noopener noreferrer">
-                        <img src={iedccec} className="iedccec-logo" alt="BOOTCAMP" />
-                    </a>
-                    <a href="https://foces.ceconline.edu/" target="_blank"  rel="noopener noreferrer">
-                        <img src={foces} className="foces-logo" alt="FOCES" />
-                    </a>
-                    <a href="https://www.visat.org" target="_blank"  rel="noopener noreferrer">
-                        <img src={visatiedc} className="visat-logo" alt="visat-iedc" />
-                    </a>
-                    
-                    <a href="https://iedc-cek.vercel.app/" target="_blank"  rel="noopener noreferrer">
-                        <img src={iedccek} className="iedccek-logo" alt="cek-iedc" />
-                    </a>
-
-                    
-
-                    <a href="https://www.visat.org" target="_blank" className="catalyst"  rel="noopener noreferrer">
-                        <img src={catalyst} className="catalyst-logo" alt="Catalyst" />
-                    </a>
-                    
-
-
-                    <a href="" target="_blank"  rel="noopener noreferrer">
-                        <img className="dummy-logo" />
-                    </a>
-
-                    <a href="https://www.visat.org" target="_blank"  rel="noopener noreferrer">
-                        <img src={sreeiedc} className="sreeiedc-logo" alt="sreeiedc" />
-                    </a>
-
-
-                </div>
-
+        <div className="collab-container">
+            <div className="collab-heading">
+                <h1>In Collaboration With</h1>
             </div>
-
-        </>
-
+            <div className="collab-cards">
+                {collaborators.map((collab, index) => (
+                    <div className="collab-card" key={index}>
+                        <a href={collab.href} target="_blank" rel="noopener noreferrer">
+                            <img src={collab.src} alt={collab.alt} className="collab-logo" />
+                        </a>
+                    </div>
+                ))}
+            </div>
+        </div>
     );
-
 }
 
 export default Collab;
