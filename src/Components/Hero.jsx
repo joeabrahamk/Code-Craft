@@ -56,16 +56,18 @@ export const Hero = () => {
                 scale: 0.985,
             }}
             className="group relative flex w-fit items-center gap-3 rounded-full bg-gray-950/10 px-10 py-5 text-2xl text-gray-50 transition-colors hover:bg-gray-950/50"
-            >
+            onClick={() => window.location.href = 'https://eetifoundation.org/events'}
+        >
             Register Now 
             <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
             </motion.button>
             </div>
 
       <div className="absolute inset-0 z-0">
-        <Canvas>
-          <Stars radius={50} count={2500} factor={4} fade speed={2} />
-        </Canvas>
+      <Canvas>
+  <Stars radius={55} count={2700} factor={4} fade speed={4} saturation={3} color="#e5601c" />
+</Canvas>
+
       </div>
     </motion.section>
   );
