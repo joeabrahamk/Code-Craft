@@ -9,7 +9,7 @@ import {
   animate,
 } from "framer-motion";
 
-const COLORS_TOP = ["#FF5733c", "#FBCEB1", "#DAA06D", "#E5601Cc"];
+const COLORS_TOP = ["#E5601C", "#F4CF71", "#F2A044", "#7F3510"];
 
 export const Hero = () => {
   const color = useMotionValue(COLORS_TOP[0]);
@@ -36,9 +36,9 @@ export const Hero = () => {
     >
       <div className="relative z-10 flex flex-col items-center">
         
-        <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
-          Code Craft '24
-        </h1>
+      <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-5xl font-medium leading-tight text-transparent sm:text-6xl sm:leading-tight md:text-7xl md:leading-tight">
+      Code Craft '24
+    </h1>
         <p className="my-6 max-w-xxl text-center text-base leading-relaxed md:text-lg md:leading-relaxed p-5">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, et,
           distinctio eum impedit nihil ipsum modi. kytdyzh yfiflci utddk ktuex cg tdekeyeh the afeul, akfuvf hugh buoo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, et,
