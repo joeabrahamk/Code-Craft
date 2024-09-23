@@ -7,8 +7,17 @@ const STAGGER = 0.025;
 
 const About = () => {
   return (
-    <div className="flex flex-col pt-32 p-16 pb-36 relative bg-[#f7f0f0]">
-      <div className="bg-white p-4 rounded-lg">
+    <div
+    className="flex flex-col pt-32 p-16 pb-36 relative bg-[#1C9FE5] h-[80vh]"
+    style={{
+      backgroundImage: `
+        linear-gradient(to right, rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 1px, transparent 1px)
+      `,
+      backgroundSize: '30px 30px', // Adjust this value to control grid size
+    }}
+  >
+      <div className="bg-white p-4 rounded-lg  h-[50vh]">
         <FlipHeading text="About" />
 
         <p className="text-2xl leading-relaxed sm:text-base">
@@ -40,7 +49,7 @@ const FlipHeading = ({ text }) => {
   return (
     <motion.h1
       ref={ref} // Attach the inView ref to the element
-      className="text-5xl font-bold mb-8 lg:text-8xl overflow-hidden sm:text-2xl text-[#FA5F1A] relative"
+      className="text-5xl font-bold mb-8 lg:text-8xl overflow-hidden sm:text-2xl text-[#1C9FE5] relative"
       initial="initial"
       animate={inView ? "hovered" : "initial"} // Trigger animation when in view
       style={{
