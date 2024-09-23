@@ -196,3 +196,92 @@
         padding-top: 17%;
     }
 }
+
+
+
+
+/*FOOTER*/
+
+.footer-bg{
+    background-image: url('C:\Users\joeab\code craft\src\assets\ffoterbg.webp'); /* Replace with the actual path to your image */
+    background-size: cover; /* Ensure the background image covers the entire element */
+    background-position: bottom; /* Center the background image */
+    background-repeat: no-repeat;  
+    height: 50vh;
+}
+
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8vh;
+  }
+  
+  .footer-left {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .footer-logo {
+    height: 60px;
+  }
+  
+  .footer-right {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .contact {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .contact:hover{
+    color: #C5D93A;
+  }
+  
+  .contact-icon {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  .footer-bottom {
+    padding-top: 10px;
+    width: 100%;
+  }
+  
+  .copyright {
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .made-by {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .heart {
+    color: #ff4b5c;
+  }
+
+  @media (max-width: 480px) {
+    .footer-bg{
+        height: 40vh;
+    }
+
+    .footer-top {
+        padding: 5vh;
+        background-position: left;
+
+    }
+
+
+  }
