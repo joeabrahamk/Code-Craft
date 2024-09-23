@@ -8,19 +8,18 @@ const STAGGER = 0.025;
 const About = () => {
   return (
     <div
-    className="flex flex-col pt-32 p-16 pb-36 relative bg-[#1C9FE5] h-[80vh]"
-    style={{
-      backgroundImage: `
-        linear-gradient(to right, rgba(255, 255, 255, 0.6) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 1px, transparent 1px)
-      `,
-      backgroundSize: '30px 30px', // Adjust this value to control grid size
-    }}
-  >
-      <div className="bg-white p-4 rounded-lg  h-[50vh]">
+      className="flex flex-col pt-16 p-8 md:pt-32 md:p-16 pb-20 md:pb-36 relative bg-[#1C9FE5] min-h-[80vh]"
+      style={{
+        backgroundImage: `
+          linear-gradient(to right, rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 1px, transparent 1px)
+        `,
+        backgroundSize: '40px 40px', // Adjusted for mobile scaling
+      }}
+    >
+      <div className="bg-white p-4 md:p-8 rounded-lg">
         <FlipHeading text="About" />
-
-        <p className="text-2xl leading-relaxed sm:text-base">
+        <p className="text-base md:text-2xl leading-relaxed">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, et,
           distinctio eum impedit nihil ipsum modi. kytdyzh yfiflci utddk ktuex
           cg tdekeyeh the afeul, akfuvf hugh buoo. Lorem ipsum, dolor sit amet
@@ -42,16 +41,16 @@ const About = () => {
 // FlipHeading Component
 const FlipHeading = ({ text }) => {
   const { ref, inView } = useInView({
-    triggerOnce: false, // Animation should trigger only once
-    threshold: 0.5, // Trigger animation when 50% of the element is in view
+    triggerOnce: false,
+    threshold: 0.5,
   });
 
   return (
     <motion.h1
-      ref={ref} // Attach the inView ref to the element
-      className="text-5xl font-bold mb-8 lg:text-8xl overflow-hidden sm:text-2xl text-[#1C9FE5] relative"
+      ref={ref}
+      className="text-3xl md:text-5xl lg:text-8xl font-bold mb-4 md:mb-8 overflow-hidden text-[#1C9FE5] relative"
       initial="initial"
-      animate={inView ? "hovered" : "initial"} // Trigger animation when in view
+      animate={inView ? "hovered" : "initial"}
       style={{
         lineHeight: 0.85,
       }}
