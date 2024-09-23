@@ -34,8 +34,10 @@ const Navbar = () => {
     <header>
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-0 w-full z-50 px-8 py-4 transition-all duration-500 ease-in-out ${
-          isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+        className={`fixed top-0 left-0 w-full z-50 px-8 py-2 transition-all duration-500 ease-in-out ${
+          isScrolled
+            ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-lg"
+            : "bg-transparent"
         }`}
       >
         <div
@@ -76,7 +78,7 @@ const Tab = ({ text, selected, setSelectedTab }) => {
   return (
     <button
       onClick={() => setSelectedTab(text)}
-      className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase md:px-5 md:py-3 md:text-base transition-colors ${
+      className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase md:px-5 md:py-2 md:text-base transition-colors ${
         selected ? "text-white" : "text-black hover:text-[#FA5F1A]"
       }`}
     >

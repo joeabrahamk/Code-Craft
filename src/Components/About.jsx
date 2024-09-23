@@ -7,24 +7,25 @@ const STAGGER = 0.025;
 
 const About = () => {
   return (
-    <div className="flex flex-col pt-32 p-16 pb-36 relative bg-[#f7f0f0]">
-      <div className="bg-white p-4 rounded-lg">
-        <FlipHeading text="About" />
-
-        <p className="text-2xl leading-relaxed sm:text-base">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, et,
-          distinctio eum impedit nihil ipsum modi. kytdyzh yfiflci utddk ktuex
-          cg tdekeyeh the afeul, akfuvf hugh buoo. Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Quae, et, distinctio eum impedit nihil
-          ipsum modi. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Quae, etdistinctio eum impedit nihil ipsum modi. ipsum, dolor sit amet
-          consectetur adipisicing elit. Quae, et, distinctio eum impedit nihil
-          ipsum modi. kytdyzh yfiflci utddk ktuex cg tdekeyeh the afeul, akfuvf
-          hugh buoo. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Quae, et, distinctio eum impedit nihil ipsum modi. Lorem ipsum, dolor
-          sit amet consectetur adipisicing elit. Quae, etdistinctio eum impedit
-          nihil ipsum modi.
-        </p>
+    <div className="flex flex-col p-12 py-32 h-[90vh] relative bg-[#eae4e4]">
+      <div className="bg-white p-4 rounded-lg flex flex-col h-[70vh] shadow-md items-center py-12 gap-y-3">
+        <FlipHeading text="About" className="scale-120" />
+        <div>
+          <p className="text-2xl leading-relaxed sm:text-base text-center mx-12">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, et,
+            distinctio eum impedit nihil ipsum modi. kytdyzh yfiflci utddk ktuex
+            cg tdekeyeh the afeul, akfuvf hugh buoo. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Quae, et, distinctio eum impedit nihil
+            ipsum modi. Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Quae, etdistinctio eum impedit nihil ipsum modi. ipsum, dolor
+            sit amet consectetur adipisicing elit. Quae, et, distinctio eum
+            impedit nihil ipsum modi. kytdyzh yfiflci utddk ktuex cg tdekeyeh
+            the afeul, akfuvf hugh buoo. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Quae, et, distinctio eum impedit nihil ipsum modi.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+            etdistinctio eum impedit nihil ipsum modi.
+          </p>
+        </div>
       </div>
     </div>
   );
