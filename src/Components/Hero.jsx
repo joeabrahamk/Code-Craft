@@ -9,7 +9,7 @@ import {
   animate,
 } from "framer-motion";
 
-const COLORS_TOP = ["#FF5733c", "#FBCEB1", "#DAA06D", "#E5601Cc"];
+const COLORS_TOP = ["#E5601C", "#F4CF71", "#F2A044", "#7F3510"];
 
 export const Hero = () => {
   const color = useMotionValue(COLORS_TOP[0]);
@@ -64,7 +64,15 @@ export const Hero = () => {
 
       <div className="absolute inset-0 z-0">
         <Canvas>
-          <Stars radius={50} count={2500} factor={4} fade speed={2} />
+          <Stars
+            radius={55}
+            count={2700}
+            factor={4}
+            fade
+            speed={4}
+            saturation={3}
+            color="#e5601c"
+          />
         </Canvas>
       </div>
     </motion.section>
