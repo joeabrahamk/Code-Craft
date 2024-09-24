@@ -1,12 +1,12 @@
-import React from "react";
-import eetilogo from "../assets/eeti-logo.webp";
-import iedccec from "../assets/iedccec.webp";
-import foces from "../assets/foces.webp"; // Ensure this path is correct
-import visatiedc from "../assets/visatiedc.webp";
-import iedccek from "../assets/iedccek.webp";
-import sreeiedc from "../assets/sreeramaiedc.webp";
-import catalyst from "../assets/Catalyst.webp";
-import foundation from "../assets/eetifoundation.webp";
+import React from 'react';
+import foundation from '../assets/eetifoundation.webp';
+import eetilogo from '../assets/eeti-logo.webp';
+import iedccec from '../assets/iedccec.webp';
+import foces from '../assets/foces.webp'; // Ensure this path is correct
+import visatiedc from '../assets/visatiedc.webp';
+import iedccek from '../assets/iedccek.webp';
+import catalyst from '../assets/catalyst.webp';
+import sreeiedc from '../assets/sreeramaiedc.webp';
 
 function Collab() {
   const collaborators = [
@@ -22,7 +22,6 @@ function Collab() {
     { src: iedccek, alt: "IEDC CEK", href: "https://iedc-cek.vercel.app/" },
     { src: catalyst, alt: "Catalyst", href: "https://www.visat.org" },
     { src: sreeiedc, alt: "Sree Rama IEDC", href: "" },
-    
   ];
 
   return (
