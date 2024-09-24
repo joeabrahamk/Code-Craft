@@ -6,8 +6,14 @@ import visatiedc from "../assets/visatiedc.webp";
 import iedccek from "../assets/iedccek.webp";
 import sreeiedc from "../assets/sreeramaiedc.webp";
 import catalyst from "../assets/Catalyst.webp";
+import foundation from "../assets/eetifoundation.webp";
 
 const logos = [
+  {
+    src: foundation,
+    alt: "EETIF",
+    href: "https://www.eetifoundation.org/",
+  },
   {
     src: eetilogo,
     alt: "EETI",
@@ -48,6 +54,7 @@ const logos = [
 
 function Collab() {
   const collaborators = [
+    { src: foundation, alt: "EETIF", href: "https://www.eetifoundation.org/" },
     { src: eetilogo, alt: "EETI", href: "https://www.eetifoundation.org/" },
     {
       src: iedccec,
@@ -59,6 +66,7 @@ function Collab() {
     { src: iedccek, alt: "IEDC CEK", href: "https://iedc-cek.vercel.app/" },
     { src: catalyst, alt: "Catalyst", href: "https://www.visat.org" },
     { src: sreeiedc, alt: "Sree Rama IEDC", href: "" },
+    
   ];
 
   return (
