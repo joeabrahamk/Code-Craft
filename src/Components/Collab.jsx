@@ -5,7 +5,7 @@ import iedccec from '../assets/iedccec.webp';
 import foces from '../assets/foces.webp'; // Ensure this path is correct
 import visatiedc from '../assets/visatiedc.webp';
 import iedccek from '../assets/iedccek.webp';
-import catalyst from '../assets/catalyst.webp';
+import catalyst from '../assets/Catalyst.webp';
 import sreeiedc from '../assets/sreeramaiedc.webp';
 
 function Collab() {
