@@ -203,7 +203,7 @@
 /*FOOTER*/
 
 .footer-bg{
-    background-image: url('C:\Users\joeab\code craft\src\assets\ffoterbg.webp'); /* Replace with the actual path to your image */
+    background-image: url('./assets/ffoterbg.webp')
     background-size: cover; /* Ensure the background image covers the entire element */
     background-position: bottom; /* Center the background image */
     background-repeat: no-repeat;  
