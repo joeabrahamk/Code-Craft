@@ -6,15 +6,12 @@ const Navbar = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [selectedTab, setSelectedTab] = useState("Home");
 
-  // Function to handle the scroll progress
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
     const totalHeight = document.body.scrollHeight - window.innerHeight;
 
-    // Change the state based on scroll position
     setIsScrolled(currentScrollPos > 50);
 
-    // Calculate the scroll percentage
     if (totalHeight > 0) {
       const scroll = (currentScrollPos / totalHeight) * 100;
       setScrollProgress(scroll);
@@ -32,12 +29,11 @@ const Navbar = () => {
 
   return (
     <header>
-      {/* Navbar */}
       <nav
         className={`fixed top-0 left-0 w-full z-50 px-8 py-2 transition-all duration-500 ease-in-out ${
           isScrolled
-            ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-lg"
-            : "bg-transparent"
+            ? "bg-yellow-400 bg-opacity-80 backdrop-blur-lg shadow-lg"
+            : "bg-yellow-300"
         }`}
       >
         <div
@@ -45,9 +41,8 @@ const Navbar = () => {
             isScrolled ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div className="text-xl font-bold">Logo</div>
+          <div className="text-xl font-bold text-red-600">Mario Logo</div>
 
-          {/* SlideTabs with Animated Selection */}
           <ul className="relative flex w-fit rounded-full p-1">
             {tabs.map((tab) => (
               <Tab
@@ -60,26 +55,24 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Scroll Progress Bar */}
         <div className="bottom-0 absolute left-0 w-full">
           <motion.div
-            className="h-1 rounded-full bg-[#FA5F1A]"
+            className="h-1 rounded-full bg-red-600"
             animate={{ width: `${scrollProgress}%` }}
             transition={{ type: "spring", duration: 0.2 }}
-          ></motion.div>
+          />
         </div>
       </nav>
     </header>
   );
 };
 
-// Tab component with hover and selection animation
 const Tab = ({ text, selected, setSelectedTab }) => {
   return (
     <button
       onClick={() => setSelectedTab(text)}
       className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase md:px-5 md:py-2 md:text-base transition-colors ${
-        selected ? "text-white" : "text-black hover:text-[#FA5F1A]"
+        selected ? "text-white" : "text-red-600 hover:text-yellow-500"
       }`}
     >
       <span className="relative z-10">{text}</span>
@@ -87,7 +80,7 @@ const Tab = ({ text, selected, setSelectedTab }) => {
         <motion.span
           layoutId="pill-tab"
           transition={{ type: "spring", duration: 0.5 }}
-          className="absolute inset-0 z-0 bg-[#FA5F1A] rounded-md"
+          className="absolute inset-0 z-0 bg-red-600 rounded-md"
         />
       )}
     </button>
