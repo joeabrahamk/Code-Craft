@@ -1,7 +1,7 @@
 import React from "react";
 import eetilogo from "../assets/eeti-logo.webp";
 import iedccec from "../assets/iedccec.webp";
-import foces from "../assets/FOCES.webp";
+import FOCES from "../assets/FOCES.webp";
 import visatiedc from "../assets/visatiedc.webp";
 import iedccek from "../assets/iedccek.webp";
 import sreeiedc from "../assets/sreeramaiedc.webp";
@@ -61,7 +61,7 @@ function Collab() {
       alt: "IEDC Bootcamp CEC",
       href: "https://www.iedcbootcampcec.in/",
     },
-    { src: foces, alt: "FOCES", href: "https://foces.ceconline.edu/" },
+    { src: FOCES, alt: "FOCES", href: "https://foces.ceconline.edu/" },
     { src: visatiedc, alt: "VISAT IEDC", href: "https://www.visat.org" },
     { src: iedccek, alt: "IEDC CEK", href: "https://iedc-cek.vercel.app/" },
     { src: catalyst, alt: "Catalyst", href: "https://www.visat.org" },
