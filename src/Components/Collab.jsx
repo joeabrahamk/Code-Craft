@@ -1,56 +1,12 @@
 import React from "react";
 import eetilogo from "../assets/eeti-logo.webp";
 import iedccec from "../assets/iedccec.webp";
-import FOCES from "../assets/FOCES.webp"; // Ensure this path is correct
+import foces from "../assets/foces.webp"; // Ensure this path is correct
 import visatiedc from "../assets/visatiedc.webp";
 import iedccek from "../assets/iedccek.webp";
 import sreeiedc from "../assets/sreeramaiedc.webp";
 import catalyst from "../assets/Catalyst.webp";
 import foundation from "../assets/eetifoundation.webp";
-
-const logos = [
-  {
-    src: foundation,
-    alt: "EETIF",
-    href: "https://www.eetifoundation.org/",
-  },
-  {
-    src: eetilogo,
-    alt: "EETI",
-    href: "https://www.eetifoundation.org/",
-  },
-  {
-    src: iedccec,
-    alt: "BOOTCAMP",
-    href: "https://www.iedcbootcampcec.in/",
-  },
-  {
-    src: FOCES,
-    alt: "FOCES",
-    href: "https://foces.ceconline.edu/",
-  },
-  {
-    src: visatiedc,
-    alt: "visat-iedc",
-    href: "https://www.visat.org",
-  },
-  {
-    src: iedccek,
-    alt: "cek-iedc",
-    href: "https://iedc-cek.vercel.app/",
-  },
-  {
-    src: catalyst,
-    alt: "Catalyst",
-    href: "https://www.visat.org",
-  },
-
-  {
-    src: sreeiedc,
-    alt: "sreeiedc",
-    href: "https://www.visat.org",
-  },
-];
 
 function Collab() {
   const collaborators = [
@@ -61,7 +17,7 @@ function Collab() {
       alt: "IEDC Bootcamp CEC",
       href: "https://www.iedcbootcampcec.in/",
     },
-    { src: FOCES, alt: "FOCES", href: "https://foces.ceconline.edu/" },
+    { src: foces, alt: "FOCES", href: "https://foces.ceconline.edu/" },
     { src: visatiedc, alt: "VISAT IEDC", href: "https://www.visat.org" },
     { src: iedccek, alt: "IEDC CEK", href: "https://iedc-cek.vercel.app/" },
     { src: catalyst, alt: "Catalyst", href: "https://www.visat.org" },
