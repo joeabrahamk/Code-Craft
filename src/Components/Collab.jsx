@@ -1,7 +1,7 @@
 import React from "react";
 import eetilogo from "../assets/eeti-logo.webp";
 import iedccec from "../assets/iedccec.webp";
-import FOCES from "../assets/FOCES.webp";
+import FOCES from "../assets/FOCES.webp"; // Ensure this path is correct
 import visatiedc from "../assets/visatiedc.webp";
 import iedccek from "../assets/iedccek.webp";
 import sreeiedc from "../assets/sreeramaiedc.webp";
@@ -25,7 +25,7 @@ const logos = [
     href: "https://www.iedcbootcampcec.in/",
   },
   {
-    src: foces,
+    src: FOCES,
     alt: "FOCES",
     href: "https://foces.ceconline.edu/",
   },
