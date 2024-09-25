@@ -86,10 +86,13 @@ export const Hero = () => {
   return (
     <motion.section
       style={{
-        backgroundImage,
-        ...gridStyle, // Adding the grid background
+        backgroundImage: `
+        linear-gradient(to right, rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 1px, transparent 1px)
+      `,
+        backgroundSize: "40px 40px", // Adjusted for mobile scaling
       }}
-      className="relative grid min-h-screen place-content-center overflow-hidden bg-blue-500 px-4 py-24 text-gray-200"
+      className="relative grid min-h-[98vh] place-content-center overflow-hidden bg-[#1C9FE5] px-4 py-24 text-gray-200"
     >
       {/* Clouds Animation - Randomly positioned clouds */}
       {cloudData.map((cloud, index) => (
@@ -113,8 +116,12 @@ export const Hero = () => {
           Super CodeCraft '24
         </h1>
         <p className="my-6 max-w-2xl text-center text-lg leading-relaxed md:text-xl md:leading-relaxed">
-          Join the most fun and exciting event of the year! Jump through code
-          challenges and hit the "register" to power-up your coding journey!
+          CodeCraft, a five-day Python Turtle graphics bootcamp, challenges
+          Kerala's aspiring coders from September 28 to October 2. Led by
+          Aadithya Sai, participants will master visual design, compete in
+          real-time challenges, and network with industry peers. The event also
+          offers a platform for creativity and networking with fellow coders
+          across the state.
         </p>
 
         {/* Mario-style Register Button */}
@@ -130,7 +137,7 @@ export const Hero = () => {
           whileTap={{
             scale: 0.95,
           }}
-          className="group relative flex w-fit items-center gap-3 rounded-full bg-[#FFD700] px-10 py-5 text-2xl text-white transition-colors hover:bg-[#FF4500]"
+          className="group relative flex w-fit items-center gap-3 rounded-full bg-blue-800 px-10 py-5 text-2xl text-white transition-colors hover:bg-[#FF4500]"
         >
           Register Now
           <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-const GRAVITY = -0.5;
-const FALL_HEIGHT = 15;
+const GRAVITY = -1;
+const FALL_HEIGHT = 12;
 const BIRD_SIZE = 20;
 const PIPE_WIDTH = 60;
 const PIPE_GAP = BIRD_SIZE * 5;
 const GAME_WIDTH = 600;
 const GAME_HEIGHT = 400;
-const PIPE_SPEED = 2;
+const PIPE_SPEED = 3;
 
 const FlappyBird = () => {
   const [birdPosition, setBirdPosition] = useState(GAME_HEIGHT / 2);
@@ -97,53 +97,70 @@ const FlappyBird = () => {
   return (
     <div
       onClick={handleFlap}
-      className="relative mx-auto mt-10 flex items-center justify-center bg-blue-400 overflow-hidden"
-      style={{ width: GAME_WIDTH, height: GAME_HEIGHT }}
+      className="relative mx-auto mt-10 flex items-center justify-center overflow-hidden"
+      style={{
+        width: GAME_WIDTH,
+        height: GAME_HEIGHT,
+        backgroundImage: "linear-gradient(to bottom, #87CEEB, #4682B4)", // sky background
+        borderRadius: "20px", // rounded corners for a polished look
+        boxShadow: "0px 8px 20px rgba(0, 0, 0, 0.2)", // subtle shadow
+      }}
     >
       {/* Bird */}
       <div
-        className="absolute bg-yellow-400"
+        className="absolute rounded-full bg-yellow-500 shadow-lg"
         style={{
           width: BIRD_SIZE,
           height: BIRD_SIZE,
           bottom: birdPosition,
           left: 100,
+          border: "2px solid #FFD700", // gold border
         }}
       />
 
       {/* Top pipe */}
       <div
-        className="absolute bg-green-500"
+        className="absolute bg-green-600"
         style={{
           width: PIPE_WIDTH,
           height: pipeHeight,
           left: pipeLeft,
           top: 0,
+          borderTopLeftRadius: "15px",
+          borderTopRightRadius: "15px", // rounded top edges for the pipes
+          boxShadow: "inset 0px 0px 5px rgba(0, 0, 0, 0.5)", // slight shadow
         }}
       />
 
       {/* Bottom pipe */}
       <div
-        className="absolute bg-green-500"
+        className="absolute bg-green-600"
         style={{
           width: PIPE_WIDTH,
           height: GAME_HEIGHT - pipeHeight - PIPE_GAP,
           left: pipeLeft,
           bottom: 0,
+          borderBottomLeftRadius: "15px",
+          borderBottomRightRadius: "15px", // rounded bottom edges for the pipes
+          boxShadow: "inset 0px 0px 5px rgba(0, 0, 0, 0.5)", // slight shadow
         }}
       />
 
       {/* Game Over Message */}
       {gameOver && (
         <div className="absolute inset-0 flex items-center justify-center bg-opacity-50 bg-gray-800 text-white">
-          <div className="text-3xl">
-            Game Over! Click or Press Space to Restart
+          <div className="text-4xl font-bold text-center animate-pulse">
+            Game Over!
+            <br />
+            Click or Press Space to Restart
           </div>
         </div>
       )}
 
       {/* Score */}
-      <div className="absolute top-2 left-2 text-2xl text-white">{score}</div>
+      <div className="absolute top-2 left-2 text-3xl font-bold text-white bg-black bg-opacity-40 p-2 rounded-lg">
+        {score}
+      </div>
     </div>
   );
 };

@@ -1,53 +1,16 @@
-import React from "react";
-import eetilogo from "../assets/eeti-logo.webp";
-import iedccec from "../assets/iedccec.webp";
-import foces from "../assets/foces.webp";
-import visatiedc from "../assets/visatiedc.webp";
-import iedccek from "../assets/iedccek.webp";
-import sreeiedc from "../assets/sreeramaiedc.webp";
-import catalyst from "../assets/Catalyst.webp";
-
-const logos = [
-  {
-    src: eetilogo,
-    alt: "EETI",
-    href: "https://www.eetifoundation.org/",
-  },
-  {
-    src: iedccec,
-    alt: "BOOTCAMP",
-    href: "https://www.iedcbootcampcec.in/",
-  },
-  {
-    src: foces,
-    alt: "FOCES",
-    href: "https://foces.ceconline.edu/",
-  },
-  {
-    src: visatiedc,
-    alt: "visat-iedc",
-    href: "https://www.visat.org",
-  },
-  {
-    src: iedccek,
-    alt: "cek-iedc",
-    href: "https://iedc-cek.vercel.app/",
-  },
-  {
-    src: catalyst,
-    alt: "Catalyst",
-    href: "https://www.visat.org",
-  },
-
-  {
-    src: sreeiedc,
-    alt: "sreeiedc",
-    href: "https://www.visat.org",
-  },
-];
+import React from 'react';
+import foundation from '../assets/eetifoundation.webp';
+import eetilogo from '../assets/eeti-logo.webp';
+import iedccec from '../assets/iedccec.webp';
+import foces from '../assets/foces.webp'; // Ensure this path is correct
+import visatiedc from '../assets/visatiedc.webp';
+import iedccek from '../assets/iedccek.webp';
+import catalyst from '../assets/Catalyst.webp';
+import sreeiedc from '../assets/sreeramaiedc.webp';
 
 function Collab() {
   const collaborators = [
+    { src: foundation, alt: "EETIF", href: "https://www.eetifoundation.org/" },
     { src: eetilogo, alt: "EETI", href: "https://www.eetifoundation.org/" },
     {
       src: iedccec,

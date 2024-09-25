@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,9 +32,7 @@ const Navbar = () => {
     <header>
       <nav
         className={`fixed top-0 left-0 w-full z-50 px-8 py-2 transition-all duration-500 ease-in-out ${
-          isScrolled
-            ? "bg-yellow-400 bg-opacity-80 backdrop-blur-lg shadow-lg"
-            : "bg-yellow-300"
+          isScrolled ? "bg-white  backdrop-blur-lg shadow-lg" : "bg-transparent"
         }`}
       >
         <div
@@ -41,7 +40,7 @@ const Navbar = () => {
             isScrolled ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div className="text-xl font-bold text-red-600">Mario Logo</div>
+          <img className="h-16 " src={logo} alt="" srcset="" />
 
           <ul className="relative flex w-fit rounded-full p-1">
             {tabs.map((tab) => (
@@ -72,7 +71,7 @@ const Tab = ({ text, selected, setSelectedTab }) => {
     <button
       onClick={() => setSelectedTab(text)}
       className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase md:px-5 md:py-2 md:text-base transition-colors ${
-        selected ? "text-white" : "text-red-600 hover:text-yellow-500"
+        selected ? "text-white" : "text-[#1C9FE5] hover:text-yellow-500"
       }`}
     >
       <span className="relative z-10">{text}</span>
@@ -80,7 +79,7 @@ const Tab = ({ text, selected, setSelectedTab }) => {
         <motion.span
           layoutId="pill-tab"
           transition={{ type: "spring", duration: 0.5 }}
-          className="absolute inset-0 z-0 bg-red-600 rounded-md"
+          className="absolute inset-0 z-0 bg-[#1C9FE5] rounded-md"
         />
       )}
     </button>

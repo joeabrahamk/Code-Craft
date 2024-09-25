@@ -1,32 +1,36 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import { FaPhoneAlt } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-[#2d2d2d] py-8 text-white">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="container mx-auto text-center"
-      >
-        <div className="mb-4">
-          <h2 className="text-2xl font-semibold text-[#e5601c]">
-            Thank you for visiting
-          </h2>
+    <>
+      <div className="footer-bg">
+        <div className="footer-top">
+          {/* Left Section - Logo */}
+          <div className="footer-left">
+            <img src={""} alt="Logo" className="footer-logo" />
+          </div>
+
+          {/* Right Section - Contact Numbers */}
+          <div className="footer-right">
+            <p className="contact">
+              <FaPhoneAlt className="contact-icon" /> +91 12345 67890
+            </p>
+            <p className="contact">
+              <FaPhoneAlt className="contact-icon" /> +91 98765 43210
+            </p>
+          </div>
         </div>
-        <p className="text-gray-400">
-          © 2024 Your Company. All rights reserved.
-        </p>
-        <motion.p
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="mt-4 text-gray-500 hover:text-white cursor-pointer"
-        >
-          Terms of Service | Privacy Policy
-        </motion.p>
-      </motion.div>
-    </footer>
+
+        {/* Bottom Section - Copyright Information */}
+        <div className="footer-bottom">
+          <p className="copyright">© 2024 . All Rights Reserved.</p>
+          <p className="made-by">
+            made with <span className="heart">❤</span> team Code Craft
+          </p>
+        </div>
+      </div>
+    </>
   );
 }
 
