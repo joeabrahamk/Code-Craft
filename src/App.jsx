@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="overflow-hidden">
       <Navbar />
-      <FlappyBird />
+      {/* <FlappyBird /> */}
       <Hero />
       <About />
       <Collab />
