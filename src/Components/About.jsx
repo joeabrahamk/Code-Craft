@@ -14,7 +14,7 @@ const About = () => {
           linear-gradient(to right, rgba(255, 255, 255, 0.6) 1px, transparent 1px),
           linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 1px, transparent 1px)
         `,
-        backgroundSize: '40px 40px', // Adjusted for mobile scaling
+        backgroundSize: "40px 40px", // Adjusted for mobile scaling
       }}
     >
       <div className="bg-white p-4 md:p-8 rounded-lg">
