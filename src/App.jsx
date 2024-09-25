@@ -7,17 +7,19 @@ import Navbar from "./Components/Navbar.jsx";
 import Footer from "./Components/Footer.jsx";
 import FlappyBirdGame from "./Components/FlappyBird.jsx";
 import FlappyBird from "./Components/FlappyBird.jsx";
+import FAQ from "./Components/FAQ.jsx";
 
 function App() {
   return (
-    <>
+    <div className="overflow-hidden">
       <Navbar />
       <FlappyBird />
       <Hero />
       <About />
       <Collab />
+      <FAQ />
       <Footer />
-    </>
+    </div>
   );
 }
 

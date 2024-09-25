@@ -132,12 +132,12 @@ export const Hero = () => {
           }}
           whileHover={{
             scale: 1.05,
-            backgroundColor: "#FF4500", // Mario red hover effect
+            // Mario red hover effect
           }}
           whileTap={{
             scale: 0.95,
           }}
-          className="group relative flex w-fit items-center gap-3 rounded-full bg-blue-800 px-10 py-5 text-2xl text-white transition-colors hover:bg-[#FF4500]"
+          className="group relative flex w-fit items-center gap-3 rounded-full bg-blue-800 px-10 py-5 text-2xl text-white transition-colors hover:bg-[#4d7ae2]"
         >
           Register Now
           <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
