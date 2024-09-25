@@ -15,10 +15,10 @@ function Footer(){
         {/* Right Section - Contact Numbers */}
         <div className="footer-right">
           <p className="contact">
-            <FaPhoneAlt className="contact-icon" /> +91 12345 67890
+            <FaPhoneAlt className="contact-icon" /> +91 70251 20451
           </p>
           <p className="contact">
-            <FaPhoneAlt className="contact-icon" /> +91 98765 43210
+            <FaPhoneAlt className="contact-icon" /> +91 94005 79315
           </p>
         </div>
       </div>
