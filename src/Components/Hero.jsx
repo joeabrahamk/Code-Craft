@@ -91,7 +91,7 @@ export const Hero = () => {
         <h1 className="max-w-3xl text-center text-5xl font-bold leading-tight text-white sm:text-6xl md:text-7xl">
           CodeCraft '24
         </h1>
-        <p className="my-6 max-w-2xl text-center text-xl leading-relaxed sm:text-2xl md:text-3xl">
+        <p className="my-6 max-w-2xl text-center text-xl leading-relaxed sm:text-2xl md:text-3xl text-blue-900">
         CodeCraft, a five-day Python Turtle graphics bootcamp from Sept 28 to Oct 2, challenges Kerala's aspiring coders. Led by Aadithya Sai, participants will master visual design, compete in challenges, and network with peers across the state.
         </p>
 
