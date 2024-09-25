@@ -46,7 +46,7 @@ function Collab() {
   });
 
   const collaborators = [
-    { src: foundation, alt: "EETIF", href: "https://www.eetifoundation.org/" },
+    
     { src: eetilogo, alt: "EETI", href: "https://www.eetifoundation.org/" },
     {
       src: iedccec,
@@ -77,6 +77,12 @@ function Collab() {
           animate="animate"
         ></motion.div>
       ))}
+
+          <div className="collab-card-main" >
+            <a href="https://www.eetifoundation.org/" target="_blank" rel="noopener noreferrer">
+              <img src={foundation} alt="EETIF" className="collab-logo-main" />
+            </a>
+          </div>
       <div className="collab-heading">
         <h1>In Collaboration With</h1>
       </div>

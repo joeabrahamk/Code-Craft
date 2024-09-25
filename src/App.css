@@ -135,6 +135,7 @@
   justify-content: center;
   gap: 2rem;
   width: 100%;
+  z-index: 10;
 }
 
 .collab-card {
@@ -144,11 +145,25 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 1rem;
   width: 20%;
-  height: 30vh;
+  height: 22vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.collab-card-main {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+    width: 20%;
+    height: 23vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
 
 .collab-card:hover {
   transform: scale(1.05);
@@ -162,10 +177,34 @@
   transition: transform 0.3s ease;
 }
 
+.relative.collab-container{
+    
+    padding-top: 15vh;
+  }
+
+.collab-logo-main {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .collab-logo-main:hover{
+    transform: scale(1.1);
+  }
+
 .collab-logo[alt="Sree Rama IEDC"],
 .collab-logo[alt="Catalyst"] {
-  transform: scale(0.6);
+  transform: scale(0.5);
 }
+
+.collab-logo[alt="VISAT IEDC"] {
+    transform: scale(0.83);
+  }
+
+.collab-logo[alt="VISAT IEDC"]:hover {
+    transform: scale(0.93);
+  }
 
 .collab-logo[alt="IEDC Bootcamp CEC"] {
   transform: scale(0.83);
@@ -188,7 +227,7 @@
 
 .collab-logo[alt="Sree Rama IEDC"]:hover,
 .collab-logo[alt="Catalyst"]:hover {
-  transform: scale(0.67);
+  transform: scale(0.55);
 }
 
 /* Media Queries */
@@ -202,21 +241,46 @@
     width: 150px;
     height: 150px;
   }
+  .relative.collab-container{
+    
+    padding-top: 15vh;
+  }
+
+  .collab-card-main {
+    width: 180px;
+    height: 180px;
+
+  }
+
 }
 
 @media (max-width: 480px) {
   .collab-heading {
     font-size: 1.7rem;
-    padding-bottom: -20%;
   }
 
   .collab-card {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 80px;
   }
 
   .collab-container {
     padding-top: 17%;
+  }
+
+  .collab-card-main {
+    width: 100px;
+    height: 80px;
+
+  }
+
+  .collab-logo{
+    scale: 1.2;
+  }
+
+  .relative.collab-container{
+    
+    padding-top: 10vh;
   }
 }
 
