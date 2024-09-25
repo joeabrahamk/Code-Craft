@@ -13,11 +13,18 @@ function App() {
   return (
     <div className="overflow-hidden">
       <Navbar />
-      {/* <FlappyBird /> */}
-      <Hero />
-      <About />
-      <Collab />
-      <FAQ />
+      <div id="home">
+        <Hero />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="collab">
+        <Collab />
+      </div>
+      <div id="faq">
+        <FAQ />
+      </div>
       <Footer />
     </div>
   );

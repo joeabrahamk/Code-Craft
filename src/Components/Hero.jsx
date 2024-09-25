@@ -88,13 +88,10 @@ export const Hero = () => {
 
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center pt-24">
-        <a
-          href="https://www.eetifoundation.org/events"
-          className="max-w-3xl text-center text-5xl font-bold leading-tight text-white sm:text-6xl md:text-7xl"
-        >
-          {" "}
+        <h1 className="max-w-3xl text-center text-5xl font-bold leading-tight text-white sm:text-6xl md:text-7xl">
           CodeCraft '24
-        </a>
+        </h1>
+
         <p className="my-6 max-w-2xl text-center text-xl leading-relaxed sm:text-2xl md:text-3xl">
           CodeCraft, a five-day Python Turtle graphics bootcamp, challenges
           Kerala's aspiring coders from September 28 to October 2. Led by
@@ -105,23 +102,25 @@ export const Hero = () => {
         </p>
 
         {/* Mario-style Register Button */}
-        <motion.button
-          style={{
-            border,
-            boxShadow,
-          }}
-          whileHover={{
-            scale: 1.05,
-            // Mario red hover effect
-          }}
-          whileTap={{
-            scale: 0.95,
-          }}
-          className="group relative flex w-fit items-center gap-3 rounded-full bg-blue-800 px-8 py-3 text-lg text-white transition-colors hover:bg-[#4d7ae2] sm:px-10 sm:py-4 sm:text-xl md:text-2xl"
-        >
-          Register Now
-          <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
-        </motion.button>
+        <a href="https://www.eetifoundation.org/events">
+          <motion.button
+            style={{
+              border,
+              boxShadow,
+            }}
+            whileHover={{
+              scale: 1.05,
+              // Mario red hover effect
+            }}
+            whileTap={{
+              scale: 0.95,
+            }}
+            className="group relative flex w-fit items-center gap-3 rounded-full bg-blue-800 px-8 py-3 text-lg text-white transition-colors hover:bg-[#4d7ae2] sm:px-10 sm:py-4 sm:text-xl md:text-2xl"
+          >
+            Register Now
+            <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
+          </motion.button>
+        </a>
       </div>
     </motion.section>
   );

@@ -28,7 +28,16 @@ const Navbar = () => {
     };
   }, []);
 
-  const tabs = ["Home", "About", "Collaboration", "LeaderBoard", "FAQ"];
+  const tabs = ["Home", "About", "Collab", "LeaderBoard", "faq"];
+
+  const handleTabClick = (tab) => {
+    setSelectedTab(tab);
+    setIsMenuOpen(false); // Close mobile menu on tab click
+    const element = document.getElementById(tab.toLowerCase());
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <header>
@@ -61,7 +70,7 @@ const Navbar = () => {
                 key={tab}
                 text={tab}
                 selected={selectedTab === tab}
-                setSelectedTab={setSelectedTab}
+                setSelectedTab={() => handleTabClick(tab)} // Call handleTabClick
               />
             ))}
           </ul>
@@ -76,8 +85,7 @@ const Navbar = () => {
                   key={tab}
                   text={tab}
                   selected={selectedTab === tab}
-                  setSelectedTab={setSelectedTab}
-                  onClick={() => setIsMenuOpen(false)} // Close the menu on tab click
+                  setSelectedTab={() => handleTabClick(tab)} // Call handleTabClick
                 />
               ))}
             </ul>
@@ -99,7 +107,7 @@ const Navbar = () => {
 const Tab = ({ text, selected, setSelectedTab }) => {
   return (
     <button
-      onClick={() => setSelectedTab(text)}
+      onClick={setSelectedTab} // Updated to use passed function directly
       className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase md:px-5 md:py-2 md:text-base transition-colors ${
         selected ? "text-white" : "text-[#1C9FE5] hover:text-yellow-300"
       }`}
