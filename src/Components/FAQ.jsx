@@ -119,8 +119,7 @@ function FAQ() {
             Is it an offline or online event?
           </AccordionHeader>
           <AccordionBody className={AccordianBodyStyle}>
-            It’s offline, but feel free to bring your VR headset just in case
-            you want to pretend you’re elsewhere.
+          It's an online event! So, you can attend in your PJs, on your couch, and no one will ever know. Bonus: zero commute, 100% comfort!
           </AccordionBody>
         </Accordion>
 
@@ -136,11 +135,10 @@ function FAQ() {
             onClick={() => handleOpen(2)}
             className={AccordianHeaderStyle}
           >
-            Will there be accommodation?
+            Do we need previous experience in Python?
           </AccordionHeader>
           <AccordionBody className={AccordianBodyStyle}>
-            Yes, accommodation will be provided, but if you prefer camping under
-            the stars, we won't stop you!
+          Not at all! Whether you're a Python pro or think Python is just a type of snake, you're welcome. We’ll guide you through it, no anti-venom required!
           </AccordionBody>
         </Accordion>
 
@@ -156,11 +154,10 @@ function FAQ() {
             onClick={() => handleOpen(3)}
             className={AccordianHeaderStyle}
           >
-            Do I need to bring a laptop?
+            Is this a paid event?
           </AccordionHeader>
           <AccordionBody className={AccordianBodyStyle}>
-            Yes, but if you're feeling rebellious, you can bring a typewriter
-            instead. Just know the Wi-Fi won’t work on that.
+          Nope, it’s completely free! Your wallet can stay in its comfy corner while you enjoy the event—no financial gymnastics required!
           </AccordionBody>
         </Accordion>
 
@@ -176,11 +173,10 @@ function FAQ() {
             onClick={() => handleOpen(4)}
             className={AccordianHeaderStyle}
           >
-            Will meals be provided during the event?
+            Will certificates be provided on event completion?
           </AccordionHeader>
           <AccordionBody className={AccordianBodyStyle}>
-            Yes, gourmet meals will be served. If you’re lucky, you might even
-            get extra dessert!
+          Yes, certificates will be provided! You’ll have official proof that you survived and thrived—perfect for framing or humble-bragging!
           </AccordionBody>
         </Accordion>
 
@@ -199,7 +195,7 @@ function FAQ() {
             Can I register on the day of the event?
           </AccordionHeader>
           <AccordionBody className={AccordianBodyStyle}>
-            No, but you can always show up with snacks, and we’ll consider it.
+          Sorry, no last-minute rush! We need a bit more time to get everything ready. So, make sure you register in advance—no fashionably late entries here!
           </AccordionBody>
         </Accordion>
 

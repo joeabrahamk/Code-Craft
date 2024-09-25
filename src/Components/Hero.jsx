@@ -116,12 +116,7 @@ export const Hero = () => {
           CodeCraft '24
         </h1>
         <p className="my-6 max-w-2xl text-center text-4xl leading-relaxed md:text-xl md:leading-relaxed">
-          CodeCraft, a five-day Python Turtle graphics bootcamp, challenges
-          Kerala's aspiring coders from September 28 to October 2. Led by
-          Aadithya Sai, participants will master visual design, compete in
-          real-time challenges, and network with industry peers. The event also
-          offers a platform for creativity and networking with fellow coders
-          across the state.
+        CodeCraft, a five-day Python Turtle graphics bootcamp from Sept 28 to Oct 2, challenges Kerala's aspiring coders. Led by Aadithya Sai, participants will master visual design, compete in challenges, and network with peers across the state.
         </p>
 
         {/* Mario-style Register Button */}
