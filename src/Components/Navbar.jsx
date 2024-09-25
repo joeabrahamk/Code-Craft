@@ -26,12 +26,12 @@ const Navbar = () => {
     };
   }, []);
 
-  const tabs = ["Home", "Pricing", "Features", "Docs", "Blog"];
+  const tabs = ["Home", "About", "Collaboration", "LeaderBoard", "FAQ"];
 
   return (
     <header>
       <nav
-        className={`fixed top-0 left-0 w-full z-50 px-8 py-2 transition-all duration-500 ease-in-out ${
+        className={`fixed top-0 left-0 w-full z-50 px-8 py-2  transition-all duration-500 ease-in-out ${
           isScrolled ? "bg-white  backdrop-blur-lg shadow-lg" : "bg-transparent"
         }`}
       >
@@ -56,7 +56,7 @@ const Navbar = () => {
 
         <div className="bottom-0 absolute left-0 w-full">
           <motion.div
-            className="h-1 rounded-full bg-red-600"
+            className="h-1 rounded-full bg-yellow-300"
             animate={{ width: `${scrollProgress}%` }}
             transition={{ type: "spring", duration: 0.2 }}
           />
@@ -71,7 +71,7 @@ const Tab = ({ text, selected, setSelectedTab }) => {
     <button
       onClick={() => setSelectedTab(text)}
       className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase md:px-5 md:py-2 md:text-base transition-colors ${
-        selected ? "text-white" : "text-[#1C9FE5] hover:text-yellow-500"
+        selected ? "text-white" : "text-[#1C9FE5] hover:text-yellow-300"
       }`}
     >
       <span className="relative z-10">{text}</span>

@@ -104,7 +104,7 @@ function FAQ() {
       ))}
 
       <p className="text-8xl text-white font-bold theme max-md:text-5xl">FAQ</p>
-      <div className="z w-3/4 mt-5 max-md:w-4/5 bg-white rounded-3xl z-50 shadow-lg relative">
+      <div className="z w-3/4 mt-5 max-md:w-4/5 bg-white rounded-3xl z-40 shadow-lg relative">
         <Accordion
           open={open === 1}
           icon={<Icon id={1} open={open} />}

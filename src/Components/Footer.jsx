@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
+import logo from "../assets/logo.png";
 
 function Footer() {
   return (
@@ -8,7 +9,7 @@ function Footer() {
         <div className="footer-top">
           {/* Left Section - Logo */}
           <div className="footer-left">
-            <img src={""} alt="Logo" className="footer-logo" />
+            <img src={logo} alt="Logo" className="footer-logo" />
           </div>
 
           {/* Right Section - Contact Numbers */}
@@ -22,7 +23,7 @@ function Footer() {
           </div>
         </div>
 
-        {/* Bottom Section - Copyright Information */}
+        
         <div className="footer-bottom">
           <p className="copyright">© 2024 . All Rights Reserved.</p>
           <p className="made-by">
