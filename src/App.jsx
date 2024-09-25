@@ -1,31 +1,48 @@
-import { useState } from "react";
+import React, { Suspense, lazy, useState, useEffect } from "react";
 import "./App.css";
-import Hero from "./Components/Hero.jsx";
-import About from "./Components/About.jsx";
-import Collab from "./Components/Collab.jsx";
-import Navbar from "./Components/Navbar.jsx";
-import Footer from "./Components/Footer.jsx";
-import FlappyBirdGame from "./Components/FlappyBird.jsx";
-import FlappyBird from "./Components/FlappyBird.jsx";
-import FAQ from "./Components/FAQ.jsx";
+import Loader from "./Components/Loader.jsx";
+
+const Hero = lazy(() => import("./Components/Hero.jsx"));
+const About = lazy(() => import("./Components/About.jsx"));
+const Collab = lazy(() => import("./Components/Collab.jsx"));
+const Navbar = lazy(() => import("./Components/Navbar.jsx"));
+const Footer = lazy(() => import("./Components/Footer.jsx"));
+const FlappyBirdGame = lazy(() => import("./Components/FlappyBird.jsx"));
+const FAQ = lazy(() => import("./Components/FAQ.jsx"));
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1800); // 1.3 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <div className="overflow-hidden">
-      <Navbar />
-      <div id="home">
-        <Hero />
-      </div>
-      <div id="about">
-        <About />
-      </div>
-      <div id="collab">
-        <Collab />
-      </div>
-      <div id="faq">
-        <FAQ />
-      </div>
-      <Footer />
+      <Suspense fallback={<Loader />}>
+        <Navbar />
+        <div id="home">
+          <Hero />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="collab">
+          <Collab />
+        </div>
+        <div id="faq">
+          <FAQ />
+        </div>
+        <Footer />
+      </Suspense>
     </div>
   );
 }
