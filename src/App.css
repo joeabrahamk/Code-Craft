@@ -219,6 +219,7 @@
     padding-left: 8vh;
     padding-right: 8vh;
     padding-top: 8vh;
+    z-index: 100;
   }
   
   .footer-left {
