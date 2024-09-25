@@ -112,10 +112,10 @@ export const Hero = () => {
 
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center">
-        <h1 className="max-w-3xl text-center text-4xl font-bold leading-tight text-white sm:text-6xl md:text-7xl">
-          Super CodeCraft '24
+        <h1 className="max-w-3xl text-center text-9xl font-bold leading-tight text-white sm:text-6xl md:text-7xl">
+          CodeCraft '24
         </h1>
-        <p className="my-6 max-w-2xl text-center text-lg leading-relaxed md:text-xl md:leading-relaxed">
+        <p className="my-6 max-w-2xl text-center text-4xl leading-relaxed md:text-xl md:leading-relaxed">
           CodeCraft, a five-day Python Turtle graphics bootcamp, challenges
           Kerala's aspiring coders from September 28 to October 2. Led by
           Aadithya Sai, participants will master visual design, compete in
@@ -137,7 +137,7 @@ export const Hero = () => {
           whileTap={{
             scale: 0.95,
           }}
-          className="group relative flex w-fit items-center gap-3 rounded-full bg-blue-800 px-10 py-5 text-2xl text-white transition-colors hover:bg-[#FF4500]"
+          className="group relative flex w-fit items-center gap-3 rounded-full bg-blue-800 px-10 py-5 text-2xl text-white transition-colors hover:bg-blue-800"
         >
           Register Now
           <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />

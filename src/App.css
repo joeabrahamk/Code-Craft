@@ -216,7 +216,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8vh;
+    padding-left: 8vh;
+    padding-right: 8vh;
+    padding-top: 8vh;
   }
   
   .footer-left {
@@ -225,7 +227,7 @@
   }
   
   .footer-logo {
-    height: 60px;
+    height: 12vh;
   }
   
   .footer-right {
@@ -242,7 +244,7 @@
   }
 
   .contact:hover{
-    color: #C5D93A;
+    color: #fde047 ;
   }
   
   .contact-icon {
@@ -297,6 +299,14 @@
         padding: 5vh;
         background-position: left;
 
+    }
+
+    .footer-logo {
+        height: 9vh;
+      }
+
+    .contact{
+        font-size: 13px;
     }
 
 
