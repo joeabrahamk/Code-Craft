@@ -103,7 +103,7 @@ function FAQ() {
         ></motion.div>
       ))}
 
-      <p className="text-8xl text-white font-bold theme max-md:text-5xl">FAQ</p>
+      <p className="text-8xl text-white font-bold theme max-md:text-5xl p-14">FAQ</p>
       <div className="z w-3/4 mt-5 max-md:w-4/5 bg-white rounded-3xl z-40 shadow-lg relative">
         <Accordion
           open={open === 1}
@@ -173,7 +173,7 @@ function FAQ() {
             onClick={() => handleOpen(4)}
             className={AccordianHeaderStyle}
           >
-            Will certificates be provided on event completion?
+            Will certificates be provided?
           </AccordionHeader>
           <AccordionBody className={AccordianBodyStyle}>
           Yes, certificates will be provided! You’ll have official proof that you survived and thrived—perfect for framing or humble-bragging!
