@@ -28,7 +28,7 @@ const Navbar = () => {
     };
   }, []);
 
-  const tabs = ["Home", "About", "Collab", /*"LeaderBoard"*/, "faq"];
+  const tabs = ["Home", "About", "Collab", /*"LeaderBoard",*/ "faq"];
 
   const handleTabClick = (tab) => {
     setSelectedTab(tab);

@@ -500,3 +500,121 @@
     0%,30%   { transform:translateY(0); }
     80%,100% { transform:translateY(-230%); }
   }
+
+
+  /* LeaderBoard*/.lb-bg {
+  background: #1c9fe5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  padding-top: 15vh;
+  color: #ffffff;
+  min-height: 100vh; 
+  padding-bottom: 10vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.6) 1px,
+    transparent 1px
+  ),
+  linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 1px, transparent 1px);
+  background-size: 40px 40px; /* Adjust this value to control grid size */
+}
+
+.lb-bg h1 {
+  font-size: 3.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+table {
+  width: 90%;
+  max-width: 800px;
+  border-collapse: separate;
+  border-spacing: 0 15px; /* Spacing between rows */
+  background: rgba(157, 157, 157, 0.243); /* Very light transparent background */
+  border-radius: 12px; /* Softly rounded corners */
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35); /* Depth with shadow */
+  
+}
+
+thead {
+  background-color: rgb(84, 101, 255); /* Slightly opaque header */
+}
+
+thead th {
+  padding: 1rem;
+  color: #ffd700;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px; /* Slightly more letter spacing */
+  text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background for even rows */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.35); /* Slightly darker background for odd rows */
+}
+
+tbody tr {
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+}
+
+tbody tr:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Highlighted shadow on hover */
+}
+
+tbody td {
+  padding: 1rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+tbody tr td:first-child {
+  font-weight: 700;
+  color: #ffd700; /* Gold color for the rank */
+  font-size: 1.3rem;
+}
+
+/* Media Query for Screens Below 480px */
+@media (max-width: 480px) {
+  .lb-bg {
+    padding: 1rem; /* Reduced padding */
+    padding-top: 10vh; /* Adjusted top padding */
+    min-height: 100vh; /* Maintain full height */
+  }
+
+  .lb-bg h1 {
+    font-size: 2.5rem; /* Smaller font size for the title */
+    margin-bottom: 1rem; /* Reduced margin */
+  }
+
+  table {
+    width: 95%; /* Wider table on smaller screens */
+    max-width: none; /* Remove max-width for better fit */
+  }
+
+  thead th {
+    font-size: 1rem; /* Smaller font size for headers */
+  }
+
+  tbody td {
+    font-size: 0.9rem; /* Smaller font size for table data */
+  }
+
+  tbody tr td:first-child {
+    font-size: 1.1rem; /* Adjust rank font size */
+  }
+}

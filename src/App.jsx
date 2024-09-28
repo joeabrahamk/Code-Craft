@@ -8,6 +8,7 @@ const Collab = lazy(() => import("./Components/Collab.jsx"));
 const Navbar = lazy(() => import("./Components/Navbar.jsx"));
 const Footer = lazy(() => import("./Components/Footer.jsx"));
 const FlappyBirdGame = lazy(() => import("./Components/FlappyBird.jsx"));
+const Leaderboard = lazy(() => import("./Components/Leaderboard.jsx"));
 const FAQ = lazy(() => import("./Components/FAQ.jsx"));
 
 function App() {
