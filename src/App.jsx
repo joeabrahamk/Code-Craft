@@ -39,7 +39,9 @@ function App() {
         <div id="collab">
           <Collab />
         </div>
-       
+       <div id="leaderboard">
+          <Leaderboard />
+        </div>
         <div id="faq">
           <FAQ />
         </div>
