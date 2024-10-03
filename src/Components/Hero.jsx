@@ -96,25 +96,7 @@ export const Hero = () => {
         </p>
 
         {/* Mario-style Register Button */}
-        <a href="https://forms.gle/bmfE4gMi7BgXX8ji9">
-          <motion.button
-            style={{
-              border,
-              boxShadow,
-            }}
-            whileHover={{
-              scale: 1.05,
-              // Mario red hover effect
-            }}
-            whileTap={{
-              scale: 0.95,
-            }}
-            className="group relative flex w-fit items-center gap-3 rounded-full bg-blue-800 px-8 py-3 text-lg text-white transition-colors hover:bg-[#4d7ae2] sm:px-10 sm:py-4 sm:text-xl md:text-2xl"
-          >
-            Submit Task 4
-            <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
-          </motion.button>
-        </a>
+        
       </div>
     </motion.section>
   );
